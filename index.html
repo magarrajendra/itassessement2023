@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Mo:Mo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <!-- header section starts  -->
+
+  <header class="header">
+    <a class="logo"> <i class="fas fa-award"></i> King Mo:Mo  </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#menu">menu</a>
+        <a href="#gallery">gallery</a> 
+        <a href="#feedback">feedback</a>
+        <a href="#contactus">contact us</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <!-- header section ends -->
+
+  <section class="home" id="home">
+    <div class="content">
+        <h3>Truly <span> Authentic Taste </span> Nepalese Food</h3>
+        <p>Satisfy your taste buds with our succulent grilled momo and crispy kothey momo, served with a tangy chutney for that extra kick of flavor. Indulge in the authentic taste of Nepal at our restaurant.</p>
+        <a href="#contactus" class="btn" >order now</a>
+    </div>
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- menu section starts  -->
+
+  <section class="menu" id="menu">
+
+    <h1 class="heading"> <span>menu items</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/fried_momo.png" alt="">
+            <h3>fried chilly momo</h3>
+            <p>Spicy, fried dumplings filled with minced meat/vegetables. </p>
+            <a href="#contactus" class="btn">order now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/khothey_momo.png" alt="">
+            <h3>khothey momo</h3>
+            <p>Filled with spiced meat, grilled for smoky flavor, served with dipping sauce.</p>
+            <a href="#contactus" class="btn">order now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/steam_momo.png" alt="">
+            <h3>steam momo</h3>
+            <p>Spicy sauce-filled  often served with tomato or peanut chutney.</p>
+            <a href="#contactus" class="btn">order now</a>
+        </div>
+
+    </div>
+
+  </section>
+
+  <!-- menu section ends -->
+
+
+  <!-- gallery section starts  -->
+
+  <section class="gallery" id="gallery">
+
+    <h1 class="heading"><span>Our gallery</span> </h1>
+
+      <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/momo1_wide.jpg" style="width:100% ">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/momo2_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/momo3_wide.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/momo4_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/momo5_wide.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/momo6_wide.jpg" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/momo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Delicious momo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/momo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Steamed momo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/momo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Spicy momo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/momo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Delicious momo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/momo5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Spicy momo">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="images/momo6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kothey momo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery section ends -->
+
+  <!-- feedback section starts  -->
+
+<section class="feedback" id="feedback">
+
+  <h1 class="heading"> <span> feedback </span> </h1>
+
+  <div class="swiper feedback-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide box">
+              <img src="images/pic-1.png" alt="">
+              <p>"I had the pleasure of trying the momos at this restaurant and they were absolutely delicious! The filling was perfectly seasoned and the dough was light and fluffy. I also appreciate that they offer a variety of meat and vegetarian options."<p><h3>Jonathan Singh</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="images/pic-2.png" alt="">
+              <p>"I highly recommend this momo restaurant to anyone looking for authentic and flavorful momos. The atmosphere is cozy and inviting, and the staff is very attentive and friendly. I can't wait to come back and try more of their menu items!"</p>
+              <h3>Natalie Kim</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="images/pic-3.png" alt="">
+              <p>"This restaurant has some of the best momos I've ever tasted! The pork momos were my personal favorite, but the chicken and veggie ones were equally delicious. The dipping sauces were also a great complement to the momos. Highly recommended."</p>
+              <h3>Brandon Patel</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+          </div>
+
+          <div class="swiper-slide box">
+              <img src="images/pic-4.png" alt="">
+              <p>"If you're a fan of momos, you won't be disappointed with this restaurant. The momos here are authentic .The staff is also very knowledgeable about the different types of momos and can recommend the best ones based on your preferences."</p>
+              <h3>Samantha Chen</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+<!-- feedback section ends -->
+
+<!-- contact us section starts  -->
+
+  <section class="contactus" id="contactus">
+
+    <h1 class="heading"><span>contact us</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+              <form name="form1" action="url" value="post">
+                <table align="center" bgcolor="#ffdeb7" border="1" cellpadding="5" cellspacing="10" >
+                    <caption><p><b>Enter your details</b></p></caption>
+                    <tr >
+                        <td >Enter your name</td>
+                        <td ><input type="text" name="first" placeholder="First Name" </td>
+                    </tr>
+                      <tr >
+                        <td>Enter your email</td>
+                        <td ><input type="email" name="email" placeholder="xyz@email.com" </td>
+                    </tr>
+                    <tr >
+                        <td>Enter your mobile</td>
+                        <td ><input type="number" name="mobile"  </td>
+                    </tr>
+                    <tr >
+                        <td>Food Order</td>
+                        <td name="comments"cols="20" rows="5"><textarea></textarea></td>
+                    </tr>
+                    <tr >
+                      <td>Address</td>
+                      <td name="address"cols="20" rows="2"><textarea></textarea></td>
+                  </tr>
+                    <tr >
+                        <td>Enter your gender</td>
+                        <td ><input type="radio" name="gender" id="male">Male <input type="radio" name="gender" id="female">Female </td>
+                    </tr>
+                        <td>DOB</td>
+                        <td><input type="date" name="date"></td>
+                    </tr>
+                    <tr></tr>
+                        <td>Choose country</td>
+                        <td><select name="country">
+                            <option value="c1">Nepal</option>
+                            <option value="c2">Nepal</option>
+                            <option value="c2">Nepal</option>
+                        </select></td>
+                    </tr> 
+                    <tr>
+                        <td>file upload</td>
+                        <td ><input type="file" name="myfile"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><input type="submit" value="submit"> <input type="reset" value="Reset Data"></td>
+                    </tr>       
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+  </section>
+
+  <!-- contactus section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> king momo <i class="fas fa-award"></i> </h3>
+            <p>Stay connected to our social media pages.</p>
+            <div class="share">
+                <a target="_blank" href="https://www.facebook.com" class="fab fa-facebook-f"> </a>
+                <a target="_blank" href="https://www.twitter.com" class="fab fa-twitter"></a>
+                <a target="_blank" href="https://www.instagram.com" class="fab fa-instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a class="links"> <i class="fas fa-phone"></i> +987654321 </a>
+            <a class="links"> <i class="fas fa-phone"></i> +984102351 </a>
+            <a class="links"> <i class="fas fa-envelope"></i> kingmomo@gmail.com </a>
+            <a class="links"> <i class="fas fa-map-marker-alt"></i> Newroad, Nepal - 44806 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#menu" class="links"> <i class="fas fa-arrow-right"></i> menu </a>
+            <a href="#feedback" class="links"> <i class="fas fa-arrow-right"></i> feedback </a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#contactus" class="links"> <i class="fas fa-arrow-right"></i> contact us </a>
+        </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="email" placeholder="your@email.com" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="images/payment.png" class="payment-img" alt="">
+        </div>
+    </div>
+</section>
+
+  <!-- footer section ends -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="script.js"></script
+  </body>
+</html>
